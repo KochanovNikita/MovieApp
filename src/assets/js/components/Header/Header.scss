@@ -1,12 +1,35 @@
 .header {
-  background: blue;
-  &__logo {
-    width: 100px;
+  background: #184de1;
+  overflow: hidden;
+  &__wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+  }
+
+  &__logo {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
     color: white;
     img {
       width: 48px;
+    }
+  }
+
+  .nav {
+    height: 100%;
+    &__list {
+      height: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      column-gap: 40px;
+      color: white;
+      font-size: 22px;
+      font-weight: 600px;
+      cursor: pointer;
     }
   }
 }
