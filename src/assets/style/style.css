@@ -1,5 +1,14 @@
 @import '~normalize.css';
 @import 'font-icon.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background: rgb(0, 0, 0);
+}
 
 .container {
   width: 1260px;

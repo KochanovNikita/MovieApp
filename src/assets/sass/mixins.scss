@@ -1,6 +1,16 @@
+@import './variablex.scss';
+
 @mixin header-blocks {
   display: flex;
   align-items: center;
-  column-gap: 5px;
+  column-gap: 10px;
   color: white;
+}
+
+@mixin header-hover {
+  padding: 10px 15px;
+  border-radius: 5px;
+  &:hover {
+    background-color: $hover-color;
+  }
 }

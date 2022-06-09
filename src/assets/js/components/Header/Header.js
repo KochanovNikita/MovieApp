@@ -1,7 +1,7 @@
-import logo from '../../../img/film.png';
+import logo from '../../../img/clapperboard.png';
 import { APP } from '../../constants';
+import SearchForm from '../SearchForm/SearchForm';
 import './Header.scss';
-import './Form.scss';
 
 const Header = () => {
   const header = `
@@ -10,7 +10,6 @@ const Header = () => {
         <div class="header__wrapper">
           <a href="index.html" class="header__logo">
             <img src="${logo}"/>
-            MovieApp
           </a>
           <div class="header__menu">
             <div class="header__burger">
@@ -22,13 +21,16 @@ const Header = () => {
               Menu
             </div>
           </div>
-          <form class="form" action="index.html">
-            <input class="form__search" type="text">
-            <button class="form__submit">
-              <span class="icon-search"></span>
-            </button>
-          </form>
+          ${SearchForm()}
+          <div class="header__whatch-list">
+            <span class="icon-bookmark-outline-add"></span>
+            Whatchlist
+          </div>
 
+          <div class="header__auth">
+            Sign In
+          </div>
+        </div>
       </div>
     </header>
   `;

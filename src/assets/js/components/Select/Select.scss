@@ -1,0 +1,14 @@
+.select {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__item {
+    font-size: 1.3rem;
+    text-align: center;
+    display: none;
+    &_selected {
+      display: block;
+    }
+  }
+}

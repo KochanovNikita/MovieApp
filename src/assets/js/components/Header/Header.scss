@@ -1,7 +1,7 @@
 @import '../../../sass/mixins.scss';
 
 .header {
-  background: #184de1;
+  background: rgb(18, 18, 18);
   padding: 10px 0;
   &__wrapper {
     display: flex;
@@ -15,9 +15,10 @@
     text-decoration: none;
     transition: all ease-in-out .2s;
     img {
+      margin-top: 8px;
       width: 3rem;
     }
-    &:hover{
+    &:hover {
       filter: opacity(.8);
     }
   }
@@ -25,20 +26,39 @@
   &__menu {
     @include header-blocks;
     cursor: pointer;
-    font-size: 1.3rem;
+    font-size: .95rem;
+    @include header-hover;
   }
 
   &__burger {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 1.3rem;
-    width: 1.7rem;
+    height: .9rem;
+    width: 1.3rem;
   }
 
   &__element {
     width: 100%;
-    height: 2px;
-    background-color: white;
+    border: 1px solid rgba(200, 200, 200, .8);
+  }
+
+  &__whatch-list {
+    color: #fff;
+    cursor: pointer;
+    font-size: .95rem;
+    font-weight: 500;
+    span {
+      color: rgba(200, 200, 200, .8);
+      font-size: 1.15rem;
+    }
+    @include header-hover;
+  }
+
+  &__auth {
+    color:#fff;
+    font-weight: 500;
+    cursor: pointer;
+    @include header-hover;
   }
 }
