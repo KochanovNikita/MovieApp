@@ -1,0 +1,6 @@
+@mixin header-blocks {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  color: white;
+}
