@@ -1,0 +1,48 @@
+@import '../../../sass/variables.scss';
+
+.movie-cart {
+  width: 270px;
+  height: auto;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
+  background-color: $cart-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__img{
+    display: block;
+    width: 100%;
+    height: 25rem;
+    cursor: pointer;
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+  }
+
+  &__whatchlist {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+    padding: 10px 0;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(60, 60, 60);
+    }
+  }
+}

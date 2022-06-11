@@ -4,7 +4,7 @@ import MovieCart from '../MovieCart/MovieCart';
 import './Movies.scss';
 
 const Movies = async () => {
-  let wrapper = '<main class="movies">';
+  let wrapper = '<main class="movies container">';
   const { films } = await getData(API_URI_V2 + TOP_AWAIT);
   if (films) {
     await Promise.all(films.map(

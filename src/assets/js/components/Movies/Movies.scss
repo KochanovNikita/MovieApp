@@ -1,7 +1,8 @@
 .movies {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  row-gap: 20px;
-  padding: 10px 20px;
+  justify-content: center;
+  row-gap: 3rem;
+  column-gap: 3rem;
+  padding: 20px;
 }

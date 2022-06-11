@@ -28,7 +28,10 @@ module.exports = {
     clean: true,
   },
   devServer: {
-    hot: true,
+    hot: false,
+    compress: true,
+    open: true,
+    port: 8000,
   },
   module: {
     rules: [
