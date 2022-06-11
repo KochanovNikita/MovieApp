@@ -10,7 +10,8 @@ const MovieCart = (nameRu, posterUrlPreview) => {
         <h3 class="movie-cart__title">${nameRu}</h3>
       </a>
       <h4 class="movie-cart__whatchlist">
-        + Whatchlist
+        +
+        Whatchlist
       </h4>
     </article>
   `;

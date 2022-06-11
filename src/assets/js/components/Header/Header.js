@@ -6,8 +6,6 @@ import './Header.scss';
 const Header = () => {
   const header = `
     <header class="header">
-      <div class="container">
-        <div class="header__wrapper">
           <a href="index.html" class="header__logo">
             <img src="${logo}"/>
           </a>
@@ -30,8 +28,6 @@ const Header = () => {
           <div class="header__auth">
             Sign In
           </div>
-        </div>
-      </div>
     </header>
   `;
   APP.innerHTML += header;
